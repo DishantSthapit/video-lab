@@ -1,14 +1,14 @@
 import Card from '../../components/shared/Card/Card';
-import videos from '../../static/videos';
 import './Videos.scss';
 import { VIDEOS } from '../../types';
 
+declare const window: any;
 function Videos() {
   return (
     <div className="videos-wrapper">
       {
-        videos && videos.map((playlist: VIDEOS) => (
-          <Card videos name={playlist.name} description={playlist.description} />
+        window.videos && window.videos.map((video: VIDEOS) => (
+          <Card id={video.id} videos name={video.name} description={video.description} />
         ))
       }
     </div>

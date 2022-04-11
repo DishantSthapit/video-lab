@@ -1,4 +1,4 @@
-const playlists = [{
+window.playlists = [{
   name: 'Favourites',
   description: 'My favourite videos',
   id: 2038131,
@@ -19,5 +19,3 @@ const playlists = [{
   videoIds: [140823],
   dateCreated: '2021-02-23T22:22:55',
 }];
-
-export default playlists;
