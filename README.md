@@ -1,6 +1,6 @@
 # ClickView Programming Practical
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses (React + TypeScript).
 
 ### Author
 Dishant Sthapit
@@ -47,6 +47,38 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+ ## 📁 What's inside?
+
+A quick look at the top-level files and directories you'll see in a Gatsby project.
+
+    .
+    ├── node_modules
+    ├── public
+    ├── src
+    ├── .eslint.json
+    ├── .gitignore
+    ├── tsconfig.json
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as all your components and styles
+
+3.  **`public`**:  The public folder contains the HTML file so you can tweak it, for example, to set the page title. 
+
+4.  **`.eslint.json`**: Contains linting rules
+
+5.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+6.  **`.tsconfig.json`**: This file defines the typescript rules (airbnb template)
+
+7. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+8. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+9. **`README.md`**: A text file containing useful reference information about your project.
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
