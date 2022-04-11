@@ -15,7 +15,7 @@ function IndividualPlaylists() {
     <div className="individual-playlists-page">
       <p>
         {playlist?.videoIds.map((videoId:number) => (
-          <ul>
+          <ul key={videoId}>
             <li>{videoId}</li>
           </ul>
         ))}

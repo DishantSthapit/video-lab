@@ -8,7 +8,7 @@ function Videos() {
     <div className="videos-wrapper">
       {
         window.videos && window.videos.map((video: VIDEOS) => (
-          <Card id={video.id} videos name={video.name} description={video.description} />
+          <Card key={video.id} id={video.id} videos name={video.name} description={video.description} />
         ))
       }
     </div>

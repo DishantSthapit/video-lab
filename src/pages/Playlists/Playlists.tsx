@@ -13,7 +13,7 @@ function Playlists() {
     <div className="playlist-wrapper">
       {
         window.playlists && window.playlists.map((playlist: PLAYLISTS) => (
-          <Card id={playlist.id} name={playlist.name} description={playlist.description} />
+          <Card key={playlist.id} id={playlist.id} name={playlist.name} description={playlist.description} />
         ))
       }
       <button onClick={() => handleAdd()} className="add-button" type="button">Add new Playlist</button>
