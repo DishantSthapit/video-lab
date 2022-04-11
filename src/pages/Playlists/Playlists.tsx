@@ -1,10 +1,14 @@
 import Card from '../../components/shared/Card/Card';
-// import playlists from '../../static/playlists';
+import './Playlists.scss';
 import { PLAYLISTS } from '../../types';
 
 declare const window: any;
 
 function Playlists() {
+  const handleAdd = () => {
+    alert('Functionality to add playlist coming soon');
+  };
+
   return (
     <div className="playlist-wrapper">
       {
@@ -12,6 +16,7 @@ function Playlists() {
           <Card id={playlist.id} name={playlist.name} description={playlist.description} />
         ))
       }
+      <button onClick={() => handleAdd()} className="add-button" type="button">Add new Playlist</button>
     </div>
   );
 }

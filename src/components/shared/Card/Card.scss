@@ -6,4 +6,15 @@
     &:hover {
         cursor: pointer;
     }
+    .playlist-button {
+        background-color:rgb(233, 190, 133);
+        color: black;
+        min-width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

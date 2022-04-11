@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { PLAYLISTS } from '../../../types';
 import './Card.scss';
 
 type TProps = {
@@ -7,6 +8,8 @@ type TProps = {
     videos?: boolean;
     id:number;
 }
+
+declare const window: any;
 
 function Card({
   name, description, videos, id,
@@ -17,11 +20,20 @@ function Card({
     navigate(`/playlists/${playlistId}`);
   };
 
+  const handleRemove = (playlistId:number) => {
+    window.playlists = window.playlists.filter((item:PLAYLISTS) => item.id !== Number(playlistId));
+  };
+
   return (
-    <div {...(!videos && { onClick: () => handleClick(id) })} className="card-wrapper">
+    <div className="card-wrapper">
       <h2>{name}</h2>
       {videos && <div>{description}</div>}
-      {!videos && <div>Explore Playlist</div>}
+      {!videos && (
+      <>
+        <button onClick={() => handleClick(id)} className="playlist-button" type="button">Explore Playlist</button>
+        <button onClick={() => handleRemove(id)} className="playlist-button" type="button">Remove Playlist</button>
+      </>
+      )}
     </div>
   );
 }
