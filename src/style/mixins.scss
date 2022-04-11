@@ -1,0 +1,9 @@
+@import './variables';
+@import './includemedia';
+@import './grid/mixins';
+
+@function rem($size) {
+  $remSize: $size / $font-size-html;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
