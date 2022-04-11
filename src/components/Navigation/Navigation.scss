@@ -1,0 +1,13 @@
+.navigation-wrapper {
+    width: 100%;
+    display: flex; 
+    font-size: 20px;
+    background-color:rgb(228, 209, 186);
+    &-item {
+        margin: 15px;
+        > a {
+            text-decoration: none; 
+            color: black;
+        }
+    }
+}
