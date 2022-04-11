@@ -1,58 +1,54 @@
 # ClickView Programming Practical
 
-Please try and complete as much of this practical as possible in the allotted time. You will be judged on your overall design skills, use of language best practices, code reuse, and design patterns. Keep in mind that this is not an assignment and there are no strict marking criteria or rules. We are simply looking for a demonstration of your ability to design and implement software.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Background
+### Author
+Dishant Sthapit
 
-ClickView enables educators to manage media across many platforms. One component of this, is allowing educators to create and manage playlists of videos. In this practical, you will create a single page web application that lets users manage playlists.
+### Setup
+ * Make sure you have NodeJS and NPM installed
+ * git clone this repo
+ * cd into the directory and yarn install so that you have all the dependencies needed to run the program.
 
-## Overview
+## Available Scripts
 
-Use the provided array of videos and playlists (found in `videos.js` and `playlists.js`) to create a single page web application that lets users create new playlists, delete playlists, add videos to playlists, and remove videos from playlists.
+In the project directory, you can run:
 
-**Note**
+### `yarn start`
 
-- This is a large practical that we are not expecting you to be able to 100% complete in the allotted time. That said, completing more tasks will make it easier for us to assess your skills.
-- This webpage should be a single page application, meaning that there should be no reloading of the window when navigating from for example "Favourites" to "Changing Minds".
-- Please do not modify the provided JavaScript file.
-- We strongly encourage the use of any JS frameworks you may be familiar with such as React, Angular, Vue, Backbone, Svelte, JQuery, Underscore, Bootstrap, Material UI etc. Although React is preferred if possible.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Task 1: Set up a public git repository
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-You will submit your code to us via a public git repository. We strongly recommend using GitHub or GitLab, but any public git provider is acceptable. **Please commit your code at the end of every task.**
+### `yarn test`
 
-## Task 2: Set up simple navigation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Create 2 pages. One will be used for viewing videos, and the other will be used for viewing playlists. You should provide a simple navigation menu that allows the user to switch between these 2 pages.
+### `yarn build`
 
-## Task 3: Display the videos and playlists
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Display all the items in the video array in the provided `video.js` file on the videos page. Then, display all the items in the playlists array in the provided `playlists.js` file. How you display these items is up to you (grid, list, table, tiles, etc).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Task 4: Add a page for viewing the videos inside each playlist
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-When the user clicks on a playlist, they should be taken to a new page that contains the videos in that playlist.
+### `yarn eject`
 
-## Task 5: Playlist creation/deletion
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Add actions for both creating new playlists, and deleting existing playlists.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Task 6: Video management in playlists
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-The user should be able to add videos to playlists, as well as remove videos from playlists.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-This involves adding the appropriate actions to videos on both the videos page, and the playlist videos page.
+## Learn More
 
-## Task 7: Provide bulk actions [Optional]
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Add functionality for users to be able to add multiple videos to playlists at once using checkboxes. Also, offer the same functionality but for removing videos from playlists where appropriate.
-
-For example, I should be able to "check" a selection of videos from a video list page, and then easily be able to add all of those videos to playlists with 1 action.
-
-## Task 8: Get creative [Optional]
-
-If you find yourself with leftover time, feel free to try to impress us with some creativity. There is room in this application for improvements, and we would love to see what you can come up with. For example, adding pagination to the video lists, adding sorting, etc.
-
-## Task 9: Create a readme.md [Compulsory]
-
-Provide instructions on how to get your code up and running as a `readme.md` file in your git repository. Please also list any dependencies that are not managed by a package manager.
+To learn React, check out the [React documentation](https://reactjs.org/).

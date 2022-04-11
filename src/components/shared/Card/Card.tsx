@@ -2,14 +2,13 @@ import { useNavigate } from 'react-router-dom';
 import { PLAYLISTS } from '../../../types';
 import './Card.scss';
 
+declare const window: any;
 type TProps = {
     name:string;
     description:string;
     videos?: boolean;
     id:number;
 }
-
-declare const window: any;
 
 function Card({
   name, description, videos, id,

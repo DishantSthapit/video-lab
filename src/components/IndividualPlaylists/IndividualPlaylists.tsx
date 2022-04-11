@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PLAYLISTS } from '../../types';
